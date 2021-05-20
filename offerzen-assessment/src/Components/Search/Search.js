@@ -13,16 +13,25 @@ class Search extends Component {
         };
 
         this.onInputChange = this.onInputChange.bind(this);
+        this.onArchiveSelected = this.onArchiveSelected.bind(this);
     };
 
     onInputChange(event) {
         // filter data at every keystroke in the input form
         // lifting up state here, we are calling `filterData`
         // which was passed in `props` from its parent component 
+        event.preventDefault();
         this.props.filterData(event.target.value);
         event.preventDefault();
     };
 
+    onArchiveSelected(event) {
+
+        event.preventDefault();
+        this.setState({checked: !this.state.checked});
+
+        this.props.filterArchivedData(this.state.checked);
+    };
     render() {
         return (
           <div >
@@ -33,7 +42,7 @@ class Search extends Component {
                   placeholder="Search" 
                 />
                 <div className='checkbox'>
-                    <input type="checkbox" id="check"/> 
+                <input type="checkbox" onChange={this.onArchiveSelected} defaultChecked={this.state.checked}/>
                 </div>
                 <div className='text'>
                     Show archived

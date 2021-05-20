@@ -14,21 +14,23 @@ class App extends Component {
     super(props)
 
     this.state = {
-      ui: {
-        isLoading: true
-      },
-      data: [],
-      dataFiltered: []
+      data: mockData,
     };
 
     this.filterData = this.filterData.bind(this);
+    this.filterArchivedData = this.filterArchivedData.bind(this);
   };
 
   filterData(value) {
     // filter candidates by name
-    let data = Object.assign({}, this.state.data);
-    let dataFiltered = Object.values(data).filter(candidate => candidate.candidate.match(new RegExp(value, 'i')));
-    this.setState({ dataFiltered });
+    let data = Object.values(mockData).filter(candidate => candidate.candidate.match(new RegExp(value, 'i')));
+    this.setState({ data:data });
+  };
+
+  filterArchivedData(value) {
+    // filter candidates by archived
+    let data = Object.values(mockData).filter(candidate => candidate.archived === value);
+    this.setState({ data:data });
   };
 
   render() {
@@ -39,13 +41,12 @@ class App extends Component {
         </div>   
         
           <div className="search">
-              <Search filterData={this.filterData} />
+              <Search filterData={this.filterData} filterArchivedData={this.filterArchivedData} />
           </div>
          
         <div className="body">  
           <CandidateList
-            isLoading={this.state.ui.isLoading}
-            data={mockData}
+            data={this.state.data}
           />
         </div>
       </div>
