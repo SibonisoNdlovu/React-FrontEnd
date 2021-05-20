@@ -1,0 +1,104 @@
+.candidate {
+    display: flex;
+}
+
+.candidate {
+    position: absolute;
+    width: 56px;
+    height: 46px;
+    
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    margin-top: 12px;
+    margin-right: 874px;
+    margin-left:  12px;
+}
+.role {
+    position: absolute;
+    width: 110px;
+    height: 46px;
+    
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    margin-top: 12px;
+    margin-right: 654px;
+    margin-left:  178px;
+}
+.lastComm {
+    position: absolute;
+    width: 110px;
+    height: 46px;
+    
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    margin-top: 12px;
+    margin-right: 487px;
+    margin-left:  345px;
+}
+.salary {
+    position: absolute;
+    width: 35px;
+    height: 46px;
+    
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    margin-top: 12px;
+    margin-right: 319px;
+    margin-left:  588px;
+}
+.sentBy {
+    position: absolute;
+    width: 56;
+    height: 46px;
+
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    margin-top: 12px;
+    margin-right: 135px;
+    margin-left:  697px;
+}
+.archive {
+    position: absolute;
+    width: 56;
+    height: 46px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color:#40AADB;;
+
+    margin-top: 12px;
+    margin-right: 15px;
+    margin-left:  887px;
+}
+.tableHeaders {
+    position: absolute;
+    width: 942px;
+    height: 35px;
+
+    background: #F9FAFB;
+
+    margin-bottom: 565px;
+    margin-right: 134px;
+}

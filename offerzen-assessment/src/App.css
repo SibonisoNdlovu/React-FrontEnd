@@ -1,0 +1,39 @@
+.app {
+
+}
+
+.header {
+  position: relative;
+  width: 1270px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  background: #343951;
+}
+
+.search {
+  position: relative;
+  width: 1270px;
+  height: 60px;
+  background: #ffffff;
+}
+
+.logo {
+  background-image: url("./Logo.png");
+  margin-top: 18px;
+  margin-bottom: 17.56px;
+  margin-right: 951.15px;
+  margin-left: 132px;;
+
+  position: absolute;
+  width: 116.85px;
+  height: 24.44px;
+}
+
+
+.body {  
+  background: #D8D8D8;
+  width: 1270px;
+  height: 460px;
+}
+
