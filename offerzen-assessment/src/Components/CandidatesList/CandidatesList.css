@@ -162,3 +162,10 @@
     margin-right: 15px;
     margin-left:  887px;
 }
+
+.arrow {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    margin-left: 5px;
+}

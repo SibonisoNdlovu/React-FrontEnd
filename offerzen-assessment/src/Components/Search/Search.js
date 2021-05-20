@@ -22,11 +22,9 @@ class Search extends Component {
         // which was passed in `props` from its parent component 
         event.preventDefault();
         this.props.filterData(event.target.value);
-        event.preventDefault();
     };
 
     onArchiveSelected(event) {
-
         event.preventDefault();
         this.setState({checked: !this.state.checked});
 

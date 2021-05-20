@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Candidate from '../Candidate/Candidate'
 import './CandidatesList.css';
+import upArrow from '../SortArrows/up.png';
+import downArrow from '../SortArrows/down.png';
 
-/*
- * List of movies in the app.
- */
 class CandidatesList extends Component {
     constructor(props) {
         super(props)     
@@ -12,6 +11,8 @@ class CandidatesList extends Component {
             data: props.data
         };
 		this.archive = this.archive.bind(this);
+        this.sortUp = this.sortUp.bind(this);
+        this.sortDown = this.sortDown.bind(this);
     }
 
     archive(value) {
@@ -26,7 +27,29 @@ class CandidatesList extends Component {
         });
     
         this.setState({data:newlist});
-      };
+    };
+
+    sortUp () {
+        var newList = [];
+
+        this.props.data
+        .sort((a, b) => a.last_comms.date_time.localeCompare(b.last_comms.date_time))
+        .map((item, i) => newList.push(item));
+
+        
+        this.setState({data:newList});
+    };
+
+    sortDown () {
+        var newList = [];
+
+        this.props.data
+        .sort((a, b) => b.last_comms.date_time.localeCompare(a.last_comms.date_time))
+        .map((item, i) => newList.push(item));
+
+        
+        this.setState({data:newList});
+    };
 
     render() {
         let data = this.props.data;	
@@ -49,7 +72,11 @@ class CandidatesList extends Component {
                         <div className='tableHeaders'>
                             <div className='candidate'>Candidate</div>
                             <div className='role'>Role</div>
-                            <div className='lastComm'>Last Communication</div>
+                            <div className='lastComm'>
+                                Last Communication
+                                <img className='arrow' src={upArrow} onClick={this.sortUp}></img> 
+                                <img className='arrow' src={downArrow} onClick={this.sortDown} style={{marginTop:'5px'}}></img>
+                            </div>
                             <div className='salary'>Salary</div>
                             <div className='sentBy'>Sent by</div>
                         </div>
