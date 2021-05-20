@@ -1,10 +1,12 @@
 import React from 'react';
 import './Candidate.css';
 
+//this is the candidate class, you can archive a candidate here
+
 const Candidate = ({archive, data, marginTop,imgMarginTop}) => {
     return (
-        <div>
-            <div style={{ backgroundColor: "#F9FAFB"}}>
+        <div style={{ color: data.archived? "#F9FAFB" : ""}}>
+            <div>
                 <div className='candidate' style={{marginTop:imgMarginTop, paddingLeft:'125px', width:'100px', paddingBottom:'45px'}}>
 					<img src={data.image} style={{width:"30%", height:"200%", borderRadius:"50%", float:"right"}}/>
                 </div>

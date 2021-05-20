@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import './Search.css';
 
 /* 
- * User search input.
+ * Candidate search input. You also filter the candidate list here using the archive checkbox
  */
 class Search extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            value: ''
+            value: '',
+            checked: false
         };
 
         this.onInputChange = this.onInputChange.bind(this);
@@ -25,7 +26,8 @@ class Search extends Component {
     };
 
     onArchiveSelected(event) {
-        event.preventDefault();
+        //filters using archive
+        // event.preventDefault();
         this.setState({checked: !this.state.checked});
 
         this.props.filterArchivedData(this.state.checked);
@@ -40,7 +42,7 @@ class Search extends Component {
                   placeholder="Search" 
                 />
                 <div className='checkbox'>
-                <input type="checkbox" onChange={this.onArchiveSelected} defaultChecked={this.state.checked}/>
+                    <input type="checkbox" onChange={this.onArchiveSelected} defaultChecked={this.state.checked}/>
                 </div>
                 <div className='text'>
                     Show archived

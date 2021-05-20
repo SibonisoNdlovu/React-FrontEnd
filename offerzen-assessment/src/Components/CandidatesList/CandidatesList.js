@@ -4,6 +4,8 @@ import './CandidatesList.css';
 import upArrow from '../SortArrows/up.png';
 import downArrow from '../SortArrows/down.png';
 
+//this is the candidateList class.
+//this is where you sort the list 
 class CandidatesList extends Component {
     constructor(props) {
         super(props)     

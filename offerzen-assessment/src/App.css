@@ -20,14 +20,15 @@
 
 .logo {
   background-image: url("./Logo.png");
-  margin-top: 18px;
-  margin-bottom: 17.56px;
-  margin-right: 951.15px;
-  margin-left: 132px;;
+  background-repeat: no-repeat;
+  margin-top: 1.8%;
+  margin-bottom: 1.756%;
+  margin-right: 95.115%;
+  margin-left: 10%;;
 
   position: absolute;
-  width: 116.85px;
-  height: 24.44px;
+  width: 11.685%;
+  height: 50%;
 }
 
 

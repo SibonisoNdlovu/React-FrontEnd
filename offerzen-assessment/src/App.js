@@ -5,14 +5,14 @@ import mockData from './MockData/data.json'
 import './App.css';
 
 /* 
- * Main component.
+ * Main component. The first component loaded in the app
  * Notes:
  * The main state is kept here and passed down to other components using props.
  */
 class App extends Component {
   constructor(props) {
     super(props)
-
+    //mockdata is used here as provided
     this.state = {
       data: mockData,
     };
