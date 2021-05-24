@@ -1,29 +1,3 @@
-Thank you very much for the opportunity to do this assessment. It was a nice and interesting task.
-
-I spent about 6 hours on this assessment due to tiny issues I encountered, but overall it was nice and simple.
-
-Being a person who normally uses Material UI for the UI it was nice for a change to style everything myself. Managed to get all the tasks done as required. The most challenging part was when I was creating the CandidateList, because I did not use a (predefined) Table I had to come up with a way to style my table using DIVs, one of the downside about my method was the amount of styling added.
-
-When I started the assessment I had a small planning process for a few minutes. I identified my components which are Candidate, CandidateList, Search and the standed APP which is on the highest level of all the components.
-
-I started by adding all the components to App.js and displaying them using based on color to make it easier to start the project and know where to place everything.
-
-I then built it by adding the logo first and went onto adding the search without the actual functionality and then the candidateList. After that I designed the candidate component and started adding solid functionality as that component would then be added onto the candidateList component to create the list. After that I added all the tiny bits and the app started flowing.
-
-A few things I would have done better given more time is to make the app more responsive, I tried aligning the layout to the given design (https://www.figma.com/file/pde4nQEjUOIDPn7ZtM9KKf/Assignment%3A-Interview-Requests-(version-1.1)?node-id=0%3A1) . I also did not add any validation. There are no tests. I also would make the styling neater as I feel like its all over the place because I tried to complete the assessment as quick as possible. I also wanted to add a loader for when data is being updated. basically could have done a lot better with the styling.
-
-As much as its a frontend assessment, it would have been nice to make an api call to fetch the data.
-I think some clarity around using libraries would have been nice. 
-
-Once again thank you very much, looking forward to hearing from you.
-
-This application was build using VSCode! using the Create React App template.
-
-To run the application:
-
-## `npm install`
-## `npm run start`
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
